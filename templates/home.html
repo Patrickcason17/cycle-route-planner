@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Cycle Route Planner</title>
+  <link rel="stylesheet" href="/static/css/styles.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+</head>
+<body>
+  <div class="top-bar">
+    <input id="start" placeholder="Start location">
+    <input id="end" placeholder="Destination">
+    <textarea id="stops" placeholder="Stops (one per line)"></textarea>
+    <button onclick="showRoute()">🚴 Show Route</button>
+    <div id="loading" class="hidden">🔄 Generating...</div>
+  </div>
+  <div id="map"></div>
+  <div class="info-box" id="route-info"></div>
+  <div class="info-box" id="eta-info"></div>
+  <div class="info-box" id="weather-info"></div>
+  <script src="/static/js/script.js"></script>
+</body>
+</html>
